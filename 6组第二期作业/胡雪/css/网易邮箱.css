@@ -1,0 +1,296 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#main {
+    margin: 0 auto;
+    width: 960px;
+}
+#top {
+    height: 81px;
+    width: 960px;
+    /*position: relative;*/
+    /*margin-top: 30px;*/
+    line-height: 81px;
+}
+
+#title {
+    height: 27px;
+    width: 644px;
+    float: left;
+    text-align: left;
+    /*position: absolute;*/
+    margin-top: 12px;
+}
+#title .wy163Img{
+    display: inline-block;
+    background-image: url("../img/glb_v2.png");
+    width: 120px;
+    height: 35px;
+    }
+#title .wy126Img{
+    display: inline-block;
+    background-image: url("../img/glb_v2.png") ;
+    background-position: -130px 0;
+    width: 120px;
+    height: 35px;
+}
+#title .yhImg{
+    display: inline-block;
+    background-image: url("../img/glb_v2.png");
+    width: 384px;
+    height: 35px;
+    background-position: -260px 0;
+}
+#title a {
+    text-decoration: none;
+    color: #000;
+}
+
+#link {
+    width: 200px;
+    text-align: right;
+    /*position: absolute;*/
+    float: right;
+    font-size: 12px;
+
+}
+
+#link a {
+    color: #039;
+    text-decoration: none;
+}
+
+#content {
+    background-color: #6495C6;
+    height: 36px;
+    width: 958px;
+    line-height: 36px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+}
+
+#content_tit {
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+
+h3 {
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+#main_body {
+    height: 657px;
+    border: 1px solid #E0E0E0;
+
+    /*position: relative;*/
+}
+
+#tab {
+    width: 581px;
+    height: 600px;
+    padding-top: 50px;
+    padding-left: 60px;
+    /*padding-bottom: 36px;*/
+    float: left;
+    /*position: absolute;*/
+}
+
+#regTab {
+    width: 551px;
+    height: 58px;
+    padding-left: 60px;
+}
+
+#regTab li {
+    float: left;
+    width: 137px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    border: 1px solid #E0E0E0;
+    font-size: 14px;
+
+}
+
+#regTab #tabUl_1 {
+    background-color: #6495C6;
+    color: #FFF;
+    font-weight: 700;
+}
+
+#regTab #tabUl_1, #regTab #tabUl_2 {
+    border-right: none;
+}
+
+#regMain {
+    color: #555;
+    font-size: 12px;
+
+}
+
+.regForm {
+    height: 70px;
+    margin-right: 60px;
+    position: relative;
+}
+
+#regMain dl input {
+    padding: 4px 5px;
+    border: 1px solid #ABABAB;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 306px;
+    box-shadow: 2px 2px 3px #EDEDED inset;
+}
+#content #main_body .warnStyle{
+    background-color: #FBE2E2;
+    border-color: #C66161;
+    color: #C00;
+    box-shadow: 2px 2px 3px #EDEDED inset
+    width:200px;
+}
+#content #main_body .focusStyle{
+    border-color: #3061C6;
+    color:#999;
+    background-Color:#fff;
+
+}
+
+#content #main_body .passStyle{
+    background-color:#fff;
+    border-color: #666;
+    color: #000;
+    box-shadow: 2px 2px 3px #EDEDED inset
+}
+
+
+.regForm dt {
+    top: 10px;
+    width: 90px;
+    height: 29.2px;
+    font-size: 14px;
+    text-align: right;
+    line-height: 29.2px;
+    display: inline-block;
+    position: absolute;
+}
+
+.regForm dt span {
+    color: rgb(204, 0, 0);
+    padding-bottom: 8px;
+}
+
+.regForm dd {
+    position: absolute;
+    /*left: 110px;*/
+    display: inline-block;
+    width: 403px;
+    height: 90px;
+    padding-left: 110px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#regMain dl .emailIpt{
+    width: 200px;
+}
+#regMain .regForm .codeIpt{
+    width: 180px;
+}
+
+.regForm dd strong {
+    font-weight: bold;
+}
+
+.regForm dd select {
+    padding: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.regForm .nameTips {
+    line-height: 16px;
+    padding: 6px 0 4px;
+    color:#999;
+}
+#regMain #code{
+    height: 90px;
+    margin-top: 20px;
+}
+.regForm .codeImg{
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top:1px;
+    right:83px;
+    border:1px solid #E7E7E7;
+}
+#regMain #codeA{
+    font-size: 12px;
+    color: #039;
+    position: absolute;
+    top:40px;
+    right:89px;
+    text-decoration: none;
+}
+.txt-tips{
+    margin-left: 110px;
+    font-size: 12px;
+}
+.regBtn{
+    width: 119px;
+    height: 37px;
+    background-color: rgb(75,165,55);
+    border: hidden;
+    border-radius: 3px;
+    line-height: 37px;
+    font-size: 14px;
+    color:#FFF;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-top:15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#right {
+    width: 270px;
+    height: 551px;
+    padding-left: 45px;
+    padding-top: 106px;
+    float: right;
+    background-color: rgb(245, 245, 245);
+    /*position: absolute;*/
+}
+#right img {
+    width: 241px;
+    height: 326px;
+}
+#bottom{
+    width: 600px;
+    margin: 10px auto;
+
+    height: 20px;
+}
+#bottom li{
+    float: left;
+    font-size: 12px;
+    color:#999;
+    margin-left: 10px;
+
+}
+#down{
+    width: 400px;
+    height: 20px;
+    margin: 10px auto;
+    font-size: 12px;
+    color:#999;
+
+}
