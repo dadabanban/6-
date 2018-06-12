@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="icon" href=""/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        body, html {
+            background: rgb(249, 249, 249);
+        }
+
+        .header {
+            width: 960px;
+            height: 65px;
+            margin: 5px auto;
+        }
+
+        .header img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .bot {
+            width: 960px;
+
+            margin: 0 auto;
+        }
+
+        .top {
+            border: 1px solid rgb(91, 136, 184);
+            color: white;
+            padding-left: 20px;
+            font-weight: 400;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            background: rgb(92, 140, 189);
+        }
+
+        .left {
+            width: 542px;
+            height: 706px;
+            float: left;
+            background: white;
+            padding: 50px 0 36px 100px;
+        }
+
+        .right {
+            width: 270px;
+            height: 706px;
+            background: rgb(245, 245, 245);
+            float: right;
+            padding-top: 106px;
+            padding-left: 45px;
+        }
+
+        .left ul {
+            width: 542px;
+
+            height: 60px;
+        }
+
+        .left li {
+            float: left;
+            color: white;
+            border: 1px solid #999;
+            width: 137px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            background: rgb(36, 108, 182);
+            font-weight: 700;
+        }
+
+        .form {
+            width: 542px;
+        }
+
+        input, select {
+            padding: 4px 5px;
+            border: #ABABAB 1px solid;
+            box-shadow: 2px 2px 3px #EDEDED inset;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 3px;
+            margin: 20px 10px;
+        }
+
+        .form span {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+            color: rgb(85, 85, 85);
+            font-size: 14px;
+        }
+
+        .btnreg {
+            width: 119px;
+            height: 47px;
+            font-size: 14px;
+            background-position: 0 -360px;
+            text-decoration: none;
+            line-height: 37px;
+            color: #FFF;
+            outline: none;
+            text-align: center;
+            font-weight: bold;
+            background: rgb(93, 179, 72);
+            margin-left: 105px;
+            box-shadow: none;
+        }
+
+        .txt-tips {
+            /*font-size: 14px;*/
+            margin-left: 95px;
+            color: rgb(153, 153, 153);
+            font-size: 12px;
+        }
+
+        span i {
+            color: red;
+            width: 20px;
+            margin-right: 10px;
+
+        }
+
+        .form p {
+            font-size: 12px;
+            color: rgb(153, 153, 153);
+            margin-left: 105px;
+            margin-top: -10px;
+        }
+
+        .warn {
+            font-weight: 700;
+            color: rgb(204, 0, 0);
+            width: 330px;
+            height: 47px;
+            background: rgb(255, 255, 225);
+            border: 1px solid rgb(198, 198, 168);
+            margin-bottom: 10px;
+            line-height: 47px;
+            text-align: center;
+            margin-left: 105px;
+            display: none;
+        }
+
+        #succ {
+            font-size: 13px;
+            color: #3D882D;
+            margin-left: 105px;
+            display: none;
+        }
+        .form .red{
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="img/header.jpg" alt="">
+</div>
+<div class="bot">
+    <form action="1.html" autocomplete="on">
+    <h3 class="top">欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</h3>
+    <div class="left">
+        <ul>
+            <li>注册字母邮箱</li>
+            <li>注册手机号码邮箱</li>
+            <li>注册vip邮箱</li>
+        </ul>
+        <div class="form" id="form">
+            <div>
+                <span><i>*</i>邮件地址 </span>
+                <input id="email" type="text" autofocus required pattern="^[a-zA-Z]\w{5,17}">@ <select name="mainDomain"
+                                                                                                       id="mainDomainSelect"
+                                                                                                       tabindex="-1">
+                <option selected="selected" value="163.com">163.com</option>
+                <option value="126.com">126.com</option>
+                <option value="yeah.net">yeah.net</option>
+            </select>
+                <div class="warn" id="warn">长度应为6~18个字符</div>
+                <div id="succ">恭喜，该邮件地址可注册</div>
+                <p id="tips">6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+            </div>
+
+            <div>
+                <span><i>*</i>密码</span>
+                <input type="password" id="password" type="text" pattern="\w{6,16}" required>
+                <p class="red">密码长度应为6~16个字符</p>
+                <p>6~16个字符，区分大小写</p>
+            </div>
+            <div>
+                <span><i>*</i>确认密码</span>
+                <input type="text"  required>
+                <p class="red">密码不一致</p>
+                <p>请再次填写密码</p>
+            </div>
+            <div>
+                <span><i>*</i>手机号码</span>
+                <input type="text" required pattern="\d{11}" >
+                <p class="red">请填写正确的手机号</p>
+                <p>忘记密码时，可以通过该手机号码快速找回密码</p>
+            </div>
+            <div>
+                <span><i>*</i>验证码</span>
+                <input type="text" required>
+                <p>请填写图片中的字符，不区分大小写</p>
+            </div>
+            <div class="regForm-item-ct txt-tips">
+                <input id="mainAcceptIpt" type="checkbox" checked="checked" tabindex="-1"> 同意<a
+                    href="http://reg.163.com/agreement.shtml" target="_blank" tabindex="-1">"服务条款"</a>和<a
+                    href="http://reg.163.com/agreement_game.shtml" target="_blank" tabindex="-1">"隐私权相关政策"</a>
+                <div id="mainAcceptTips"></div>
+            </div>
+            <!--<button class="btnreg">立即注册</button>-->
+            <input  class="btnreg" id="sub" type="submit" value="提交注册"/>
+        </div>
+    </div>
+    <div class="right"><img src="http://mimg.127.net/xm/reg_all/img/reg_master.gif" alt=""></div>
+    </form>
+</div>
+</body>
+</html>
+<script>
+
+    let inputlist = document.getElementById("form").getElementsByTagName("input");
+    console.log(inputlist);
+    let warn = document.getElementById("warn");
+    let succ = document.getElementById("succ");
+    let tips = document.getElementById("tips");
+    let password = document.getElementById("password");
+
+    var reg = {
+        email: /^[a-zA-Z]/,
+        emaillength: /^[a-zA-Z]\w{5,17}/,
+        password: /^\w{6,16}/
+    };
+    for (let i = 3; i < inputlist.length; i++) {
+        inputlist[0].onblur = function () {
+            // if (this.validity.valid){
+            if (reg["email"].test(this.value)) {
+
+                if (reg["emaillength"].test(this.value)) {
+                    warn.style.display = "none";
+                    succ.style.display = "block";
+                    tips.style.display = "none";
+                    warn.innerHTML = "恭喜，该邮件地址可注册";
+
+                } else {
+                    warn.style.display = "block";
+                    succ.style.display = "none";
+                    warn.innerHTML = "长度应为6~18个字符";
+                    tips.style.display = "none";
+
+                }
+
+
+            } else {
+                warn.style.display = "block";
+                succ.style.display = "none";
+                warn.innerHTML = "必须以字母开头";
+                tips.style.display = "none";
+            }
+        };
+        inputlist[1].onblur = function () {
+
+            if (this.validity.valid) {
+                this.nextElementSibling.style.display="block";
+                this.nextElementSibling.innerHTML="√";
+                this.nextElementSibling.nextElementSibling.style.display="none"
+            } else {
+                this.nextElementSibling.style.display="block";
+                this.nextElementSibling.nextElementSibling.style.display="none"
+            }
+        }
+        inputlist[2].onblur = function () {
+            if (inputlist[2].value==inputlist[1].value) {
+
+                this.nextElementSibling.style.display="block";
+                this.nextElementSibling.innerHTML="√";
+                this.nextElementSibling.nextElementSibling.style.display="none"
+            } else {
+                this.nextElementSibling.style.display="block";
+                this.nextElementSibling.innerHTML="密码不一致";
+                this.nextElementSibling.nextElementSibling.style.display="none"
+            }
+        }
+        inputlist[3].onblur = function () {
+            if (this.validity.valid) {
+
+                this.nextElementSibling.style.display="block";
+                this.nextElementSibling.innerHTML="√";
+                this.nextElementSibling.nextElementSibling.style.display="none"
+            } else {
+                this.nextElementSibling.style.display="block";
+                this.nextElementSibling.innerHTML="请填写正确的手机号";
+                this.nextElementSibling.nextElementSibling.style.display="none"
+            }
+        }
+    }
+
+</script>
