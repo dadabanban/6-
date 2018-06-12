@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+#container{
+    width: 958px;
+    height: 708px;
+    border: 1px solid #E0E0E0;
+    margin: 0 auto;
+}
+#container #title{
+    height: 36px;
+    background-color: #6495C6;
+    border: #5B88B8 1px solid;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: 50px;
+}
+#container #title h1{
+    font-size: 14px;
+}
+#container #left{
+    width: 642px;
+    height: 652px;
+    float: left;
+}
+#container #nav{
+    width: 421px;
+    height: 39px;
+    margin: 0 0 30px 210px;
+}
+
+#container #nav button a{
+    color: #555;
+    text-decoration: none;
+}
+#container #list{
+    margin-left:210px;
+}
+#container #list li{
+    margin-bottom: 20px;
+    color: #999;
+}
+#container #list li p{
+    font-size: 12px;
+}
+#container #list li .suffix{
+    float: right;
+    margin-right:125px;
+}
+#container #list li p .agreed{
+    float: left;
+}
+#container .regedit{
+    width: 119px;
+    height: 37px;
+    background: limegreen;
+    margin: 30px 0 0 265px ;
+}
+
+
+
+
+
+
+
+
+
+
+
