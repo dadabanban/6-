@@ -1,0 +1,141 @@
+.box{
+    width: 1000px;
+    margin: 30px auto 0;
+}
+.box .top{
+    background: #9198ff;
+    line-height: 32px;
+    padding-left: 30px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    font-size: 16px;
+    color: #f2f2f2;
+}
+.content{
+    float: left;
+    margin: 0 auto;
+    padding: 45px 90px 0 90px;
+    width: 470px;
+    border: 1px solid #ccc;
+    height: 600px;
+}
+.box .list{
+    margin-bottom: 30px;
+}
+.box .list li{
+    float: left;
+    line-height: 32px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+.box .list li.li3{
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+.box .list .li1{
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #8082ff;
+}
+.box .list li a{
+    padding: 0 20px;
+    text-align: center;
+    color: #434f59;
+}
+.box .list .li1 a{
+    color: #f2f2f2;
+}
+.text li{
+    margin-bottom: 20px;
+}
+.text li span{
+    margin-right: 20px;
+    color: #333;
+    font-size: 14px;
+}
+.text li .span1{
+    margin-right: 0;
+}
+.box .text span i{
+    vertical-align: middle;
+    font-style: normal;
+    font-size: 18px;
+    margin-right: 4px;
+    color: red;
+}
+.text li input{
+    width: 340px;
+    height: 26px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+.text li input.email{
+    width: 230px;
+}
+.text li p{
+    margin: 5px 0 0 92px;
+    font-size: 12px;
+    color: #777777;
+}
+.text li select{
+    height: 26px;
+}
+.text li.password{
+    margin-left: 28px;
+}
+.text li.code{
+    margin-left: 14px;
+}
+.text li.code input{
+    width: 201px;
+}
+.text li.in{
+    margin-left: -14px;
+}
+.text li p.p1{
+    margin-left: 64px;
+}
+.text li p.p2{
+    margin-left: 78px;
+}
+.text li p.p2 span{
+    margin-left: 30px;
+    font-size: 12px;
+}
+.text li p.p2 span a{
+    color: #777777;
+}
+.text li p.p3{
+    margin-left: 106px;
+}
+.bottom{
+    margin-left: 82px;
+}
+.bottom .click{
+    display: block;
+    width: 14px;
+    height:14px;
+    float: left;
+}
+.bottom .agree{
+    float: left;
+    padding-left: 6px;
+    font-size: 12px;
+    color: #777;
+    margin: 0 80px 14px 0;
+}
+.bottom .agree a{
+    color: #188ae4;
+}
+.bottom .button{
+    cursor: pointer;
+    display: block;
+    width: 120px;
+    height: 36px;
+    background-color: #56e479;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #27e48e;
+}
+

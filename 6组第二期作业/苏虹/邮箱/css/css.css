@@ -1,0 +1,108 @@
+body{
+    background-color: #eeeeee;
+}
+.email{
+    width: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #ffffff;
+    user-select: none;
+}
+label{
+    font-size: 14px;
+    color: #55557b;
+}
+label i{
+    color: red;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.mar1{
+    margin-left: 30px;
+}
+.mar2{
+    margin-left: 10px;
+}
+select{
+    width: 100px;
+    height: 25px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #555555;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+    margin-left: 20px;
+    border: solid 1px #ababab;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.free{
+    width: 140px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+input.word{
+    width: 330px;
+}
+.email i{
+    font-style: normal;
+}
+.email p{
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+.code{
+    display: inline-block;
+    width: 140px;
+    height: 57px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.pic{
+    width: 120px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    border: solid 1px black;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    color: red;
+    font-weight: 100;
+
+}
+p.fill{
+    font-size: 12px;
+    color: #003399;
+    margin-left: 13px;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+p.left{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.agree{
+    width: 15px;
+    height: 15px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.login{
+    width: 120px;
+    height: 35px;
+    background-color: green;
+    margin-left: 80px;
+}
